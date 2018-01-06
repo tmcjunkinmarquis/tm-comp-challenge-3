@@ -1,0 +1,283 @@
+body{
+  margin: 0;
+
+}
+
+#green {
+    float: left;
+    width: 15vw;
+    height: 100vh;
+    border: .5vh solid green;
+    float: left;
+    margin: .25vh;
+}
+
+#yellow{
+  float: left;
+  width: 14.75vw;
+  height: 12.75vw;
+  background-color: yellow;
+  float: left;
+  margin: .25vh;
+}
+
+#beige{
+  width: 14.5vw;
+  height: 25vh;
+  background-color: beige;
+  float: left;
+  margin: .25vh;
+}
+
+#purple{
+  width: 14.5vw;
+  height: 25vh;
+  background-color: purple;
+  float: left;
+  margin: .25vh;
+}
+
+#cadetblue{
+  width: 14.5vw;
+  height: 25vh;
+  background-color: cadetblue;
+  float: left;
+  margin: .25vh;
+}
+
+
+#red {
+    float: left;
+    width: 80vw;
+    height: 46vh;
+    border: .5vh solid red;
+    margin: .25vh;
+}
+
+.top__nav{
+    float: right;
+    width: 78.5vw;
+    height: 6vh;
+    border: .5vh solid black;
+    background-color: cornsilk;
+    margin: .25vh;
+}
+
+.top__nav__icon{
+  width: 5vw;
+  height: 5.5vh;
+  border: .25vh solid black;
+  background-color: violet;
+  margin: .25vh;
+}
+
+.top__nav__bullet__list{
+  float: left;
+}
+
+.top__nav__search__input{
+  width: 51vw;
+}
+
+.top__nav__add__user{
+  float: right;
+}
+
+.top__nav__add__page{
+  float: right;
+}
+
+.top__nav__show__all__pages{
+  float: right;
+}
+
+.job__title__nav{
+  display: webkit-inline-box;
+}
+
+.top__job-title{
+    display: inline-block;
+    width: 79vw;
+    height: 18.5vh;
+    background-color: darkorange;
+    margin: .5vh;
+}
+
+.top__job-title-name{
+  float: left;
+  width: 50vw;
+  height: 12vh;
+  background-color: thistle;
+  border: .25vh solid black;
+  margin: .25vh;
+}
+
+.top__job-location{
+  float: left;
+  width: 22vw;
+  height: 4vh;
+  background-color: darkorchid;
+  border: .25vh solid black;
+  margin: .25vh;
+}
+
+.top__job-link{
+  display: inline-block;
+  width: 22vw;
+  height: 4vh;
+  background-color: indigo;
+  border: .25vh solid black;
+  margin: .25vh;
+}
+
+.job__title__nav{
+  display: inline-block;
+  float: right;
+  width: 24vw;
+  height: 12vh;
+  background-color: indigo;
+  border: .25vh solid black;
+  margin: .25vh;
+}
+
+.job__icon{
+  float: right;
+  width: 5vw;
+  height: 5vh;
+  border: .25vh solid black;
+  background-color: violet;
+  margin: .25vh;
+}
+
+.dashboard__view__options{
+  /*padding-right: 0;*/
+  float: left;
+  width: 70vw;
+  height: 4vh;
+  background-color: greenyellow;
+  border: .25vh solid black;
+  margin: .25vh;
+}
+
+.dashboard__view__options-ul{
+  float: left
+  width: 65vw;
+  height: 1.1vh;
+  border: .25vh solid pink;  
+}
+
+li{
+  font-size: 1vh 
+}
+
+.dashboard-view-choice{
+  display: inline-block;
+  margin-right: 2vh;
+  text-align: left
+  
+}
+
+
+
+.top__graphs{
+    float: right;
+    width: 79.5vw;
+    height: 19vh;
+    background-color: darksalmon;
+    margin: .25vh;
+    
+}
+
+.top__figures{
+  width: 80vw;
+  height: 19vh;
+  border: .5vh solid lightsalmon;
+  margin: .25vh;
+}
+
+.top__left__figures{
+  display: inline-block;
+  float: left;
+  margin: .25vh;
+  width: 45vw;
+  height: 13.5vh;
+  border: .5vh solid black;
+  margin: .25vh;
+}
+
+.top__left__figures__circle__charts{
+  float: left;
+  width: 13vw;
+  height: 12.5vh;
+  background-color: lemonchiffon;
+  margin: .25vh;
+}
+
+.top__left__figures__caption{
+  width: 35vw;
+  height: 2vh;
+  background-color: peachpuff;
+  margin: 1vh .25vh;
+  display: inline-block;
+  float: left;
+}
+
+.top__right__figure{
+  display: inline-block;
+  float: right;
+  margin: .25vh;
+  width: 30vw;
+  height: 13.5vh;
+  border: .5vh solid black;
+  margin: .25vh;
+}
+
+.top__right__figure__bar__chart{
+  float: right;
+  width: 28vw;
+  height: 12.5vh;
+  background-color: violet;
+  margin: .25vh;
+}
+
+.top__right__figure__caption{
+  display: inline-block;
+  float: right
+  width: 35vw;
+  height: 2vh;
+  background-color: peachpuff;
+  margin: 1vh .25vh;
+}
+
+
+
+
+
+#blue {
+    width: 80vw;
+    height: 90vh;
+    border: .5vh solid blue;
+    margin: .25vh;
+    float: left;
+}
+
+#dodgerblue{
+    width: 50vw;
+    height: 89.5vh;
+    background-color: dodgerblue;
+    margin: .25vh;
+    float: left;
+}
+
+#forestgreen{
+    width: 28vw;
+    height: 89.5vh;
+    background-color: forestgreen;
+    margin: .25vh;
+    float: right;
+
+}
+
+
+
+
