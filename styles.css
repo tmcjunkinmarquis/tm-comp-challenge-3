@@ -3,8 +3,9 @@ body{
 
 }
 
-#green {
+.side{
     float: left;
+    overflow: auto
     width: 15vw;
     height: 100vh;
     border: .5vh solid green;
@@ -12,36 +13,74 @@ body{
     margin: .25vh;
 }
 
-#yellow{
-  float: left;
+.side__picture {
+  display: block;
+  text-align: center;
   width: 14.75vw;
   height: 12.75vw;
+
   background-color: yellow;
-  float: left;
-  margin: .25vh;
+  margin: .25vw;
+  padding-bottom: .5vh
 }
 
-#beige{
+#circle-picture {
+      width: 8vw;
+      height: 8vw;
+      -webkit-border-radius: 4vw;
+      -moz-border-radius: 4vw;
+      border-radius: 4vw;
+      background: white;
+      margin: 1vw; 
+    }
+
+.side__main{
+  
   width: 14.5vw;
   height: 25vh;
-  background-color: beige;
-  float: left;
+  background-color: green;
+  /*float: left;*/
   margin: .25vh;
+  align-content: left;
 }
 
-#purple{
+.main__link{
+  display: block;
+  color: white;
+  font-size: 2vh;
+  margin: .5vh .5vw .5vh .5vw;
+}
+
+
+.side__admin{
+  display: block;
   width: 14.5vw;
   height: 25vh;
   background-color: purple;
-  float: left;
   margin: .25vh;
 }
 
-#cadetblue{
+.admin__link{
+  display: block;
+  color: white;
+  font-size: 2vh;
+  margin: .5vh .5vw .5vh .5vw;
+}
+
+.side__categories{;
   width: 14.5vw;
   height: 25vh;
   background-color: cadetblue;
-  float: left;
+  margin: .25vh;
+}
+
+.checkbox{
+  display: block;
+  overflow: auto
+  width: 14vw;
+  /*height: 2.5vh;*/
+  background-color: gray;
+  /*float: left;*/
   margin: .25vh;
 }
 
@@ -132,6 +171,7 @@ body{
 
 .job__title__nav{
   display: inline-block;
+  align-items: center;
   float: right;
   width: 24vw;
   height: 12vh;
@@ -140,13 +180,43 @@ body{
   margin: .25vh;
 }
 
-.job__icon{
+.job__title__open__button{
   float: right;
-  width: 5vw;
+  width: 8vw;
   height: 5vh;
+  border-radius: 5vh;
   border: .25vh solid black;
   background-color: violet;
-  margin: .25vh;
+  font-size: 1.5vh
+}
+
+#circle-icon {
+      width: 4vh;
+      height: 4vh;
+      -webkit-border-radius: 2vh;
+      -moz-border-radius: 2vh;
+      border-radius: 2vh;
+      /*background: white;*/
+      display: inline-block;
+      float: right;
+      margin: 4vh .5vh;
+    }
+
+    #oval{
+      width: 8vh;
+      height: 4vh;
+      -webkit-border-radius: 2vh;
+      -moz-border-radius: 2vh;
+      border-radius: 2vh;
+      /*background: white;*/
+      display: inline-block;
+      float: right;
+      margin: 4vh .25vh;
+    }
+  
+
+.fa-circle{
+  color: #32CD32;
 }
 
 .dashboard__view__options{
@@ -254,30 +324,63 @@ li{
 
 
 #blue {
+    overflow: auto
     width: 80vw;
-    height: 90vh;
+    /*height: 90vh;*/
     border: .5vh solid blue;
     margin: .25vh;
     float: left;
 }
 
 #dodgerblue{
-    width: 50vw;
+    width: 51vw;
     height: 89.5vh;
     background-color: dodgerblue;
     margin: .25vh;
     float: left;
 }
 
-#forestgreen{
+.social{
+  display: flex;
+  flex-direction: column;
+  overflow: auto
     width: 28vw;
-    height: 89.5vh;
+    /*height: 89.5vh;*/
     background-color: forestgreen;
     margin: .25vh;
     float: right;
-
 }
 
+.social__button{
+  width: 27.5vw;
+  height: 7vh;
+  background-color: ivory;
+  margin: 1vh .5vh;
+}
+
+.social__h3{
+  overflow: auto;
+  width: 27.5vw;
+  /*height: 22vh;*/
+  background-color: ivory;
+  margin: 1vh .5vh;
+  /*padding: 1.75vh 0vh;*/
+}
+
+.social__input{
+  display: inline-block;
+  width: 21vw;
+  height: 4vh;
+  background-color: violet;
+  margin: .25vh 0vh .25vh .25vh;
+}
+
+.input__button{
+  width: 4vw;
+  height: 4vh;
+  background-color: gray;
+  margin: .25vh 0vh .25vh 0vh;
+}
 
 
 
