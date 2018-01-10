@@ -8,21 +8,17 @@
   <link rel="stylesheet" href="styles.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 </head>
 
 
 
 
 <body>
+  <button class="side_nav_hide_reveal"><i class="fas fa-plus"></i>Show Side Navivation</button>
+      
 
   <aside class="side" id="green">
-
-
-<!-- <picture>
-    <source srcset="smaller.jpg" media="(max-width: 768px)">
-    <source srcset="default.jpg">
-    <img srcset="default.jpg" alt="My default image">
-</picture> -->
 
 
     <picture class="picture side__picture" >
@@ -34,67 +30,69 @@
 
     <section class="side__main" id="beige">
       Main
-      <a class="main__link"><i class="fas fa-home"></i>  HOME</a>
-      <a class="main__link"><i class="fas fa-briefcase"></i>  JOBS</a>
-      <a class="main__link"><i class="fas fa-file-alt"></i>  RESUME</a>
-      <a class="main__link"><i class="far fa-clipboard"></i>  TASKS</a>
-      <a class="main__link"><i class="far fa-calendar-alt"></i>  CALENDAR</a>
+      <a class="side__link"><i class="fas fa-home"></i>  HOME</a>
+      <a class="side__link"><i class="fas fa-briefcase"></i>  JOBS</a>
+      <a class="side__link"><i class="fas fa-file-alt"></i>  RESUME</a>
+      <a class="side__link"><i class="far fa-clipboard"></i>  TASKS</a>
+      <a class="side__link"><i class="far fa-calendar-alt"></i>  CALENDAR</a>
     </section>
 
     <section class="side__admin" id="purple">Admin
-      <a class="admin__link"><i class="fas fa-user"></i>  USERS</a>
-      <a class="admin__link"><i class="fas fa-globe"></i>  LOCATIONS</a>
-      <a class="admin__link"><i class="fas fa-code-branch"></i>  WORKFLOWS</a>
-      <a class="admin__link"><i class="fas fa-book"></i>  JOB BOARDS</a>
-      <a class="admin__link"><i class="fab fa-connectdevelop"></i>  SOCIAL</a>
+      <a class="side__link"><i class="fas fa-user"></i>  USERS</a>
+      <a class="side__link"><i class="fas fa-globe"></i>  LOCATIONS</a>
+      <a class="side__link"><i class="fas fa-code-branch"></i>  WORKFLOWS</a>
+      <a class="side__link"><i class="fas fa-book"></i>  JOB BOARDS</a>
+      <a class="side__link"><i class="fab fa-connectdevelop"></i>  SOCIAL</a>
     </section>
 
-    <section class="side__categories" id="cadetblue">
-    Categories
-      <section class="checkbox">
-        <input class="checkbox__administrative" type="checkbox" value="administrative">
-      <label for="administrative">Administrative</label> 
-      </section>
+    
 
-      <section class="checkbox">
-        <input class="checkbox__design" type="checkbox" value="design">
-      <label for="design">Design</label>
-      </section>
-      
-      <section class="checkbox">
-         <input class="checkbox__executive" type="checkbox" value="executive">
-      <label for="executive">Executive</label>
-      </section>
+    <section class="side__categories" id="cadetblue">Categories
+      <a class="side__link checkbox-administrative checkbox"><span class="administrative-icon  checkbox-icon"></span>
+        <p class="administrative-text">Administrative</p></a>
 
-      <section class="checkbox">
-        <input class="checkbox__humanresources" type="checkbox" value="human-resources">
-      <label for="human-resources">Human Resource</label>
-      </section>
-     
-      
+      <a class="side__link checkbox-design checkbox"><span class="design-icon  checkbox-icon"></span>
+        <p class="design-text">Design</p></a>
+
+      <a class="side__link checkbox-executive checkbox"><span class="executive-icon  checkbox-icon"></span>
+        <p class="executive-text">Executive</p></a>
+
+      <a class="side__link"><span class="humanresources-icon  checkbox-icon"></span>
+        <p class="humanresources-text">Human Resources</p></a>
+
     </section>
 
   </aside>
     
   <section class="top" id="red">
-    <nav class="top top__nav" id="cornsilk">
-      <i class="top__nav__icon top__nav__bullet__list"></i>
+    <nav class="top__nav" id="cornsilk">
+      <button class="top__nav__icon top__nav__menu">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <i class="fas fa-search search__icon"></i>
+      <input class="top__nav__search__input" type="text" value="Search here"></input>
       
-      <input class="top__nav__search__input"><i class="top__nav__search__icon"></input>
+      <button class="top__nav__icon top__nav__show__all__pages">
+        <i class="fas fa-th "></i>
+      </button>
+      <!-- <i class="top__nav__icon top__nav__add__user"></i> -->
       
+      <button class="top__nav__icon top__nav__calendar">
+        <i class="far fa-calendar-alt"></i>
+      </button>
       
-      <i class="top__nav__icon top__nav__add__user"></i>
-      
-      <i class="top__nav__icon top__nav__add__page"></i>
-      
-      <i class="top__nav__icon top__nav__show__all__pages"></i>
+      <button class="top__nav__icon top__nav__add__user">
+        <i class="fas fa-user-plus"></i>
+      </button>
 
     </nav>
 
 
-    <section class="top top__job-title" id="darkorange">
-      <article class="top__job-title-name">Customer Service Representative
-        <p class="top__job-location">San Francisco</p>
+    <section class="top__job-title" id="darkorange">
+      <article class="job-wrapper">
+        <p class="top__job-title-name">Customer Service Representative</p>
+        <p class="top__job-location"><i class="fas fa-map-marker"></i>San Francisco</p><p class="divider">•</p>
         <a class="top__job-link" href=" ">Preview this post</a>
       </article>
       
@@ -107,8 +105,6 @@
         <button class="job__icon job__title__bookmark__icon" id="circle-icon"><i class="fas fa-bookmark"></i></button>
 
         <button class="job__title__open__button" id="oval"><i class="fas fa-circle"></i>Open</button>
-        
-
       </nav>
       
       <nav class="dashboard__view__options">
@@ -128,46 +124,160 @@
     </section>
 
 
-    <section class="top top__graphs" id="darksalmon">
+    <section class="top__graphs" id="darksalmon">
       
       <figure class="top__left__figures" id="lightsalmon">
         
-        <img class="top__left__figures__circle__charts" src=" " alt="APPLICANTS">
+        <!-- <img class="top__left__figures__circle__charts" src=" " alt="APPLICANTS"> -->
+<picture class="top__left__applicant__chart">
+        <svg class="top__left__figures__circle__charts" width="100%" height="100%" viewBox="0 0 42 42" class="donut" alt="APPLICANTS">
+          <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="transparent">
         
-        <img class="top__left__figures__circle__charts" src=" " alt="INTERVIEWS">
+          </circle>
+          <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#DBE4EA" stroke-width="3"></circle>
+
+          <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#DBE4EA" stroke-width="3"></circle>
+
+          <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#69B8BF" stroke-width="3" stroke-dasharray="80 20" stroke-dashoffset="75"></circle>
+
+          <g class="chart-text">
+    <text x="50%" y="50%" class="chart-number">
+      10
+    </text>
+    <text x="50%" y="50%" class="chart-label">
+      APPLICANTS
+    </text>
+  </g>
+</svg>
+ </picture>
+
+        <picture class="top__left__applicant__chart">
+        <svg class="top__left__figures__circle__charts" width="100%" height="100%" viewBox="0 0 42 42" class="donut" alt="APPLICANTS">
+          <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="transparent">
         
-        <img class="top__left__figures__circle__charts" src=" " alt="FORWARDS">
+          </circle>
+          <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#DBE4EA" stroke-width="3"></circle>
+
+          <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#DBE4EA" stroke-width="3"></circle>
+
+          <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#49A4F3" stroke-width="3" stroke-dasharray="40 60" stroke-dashoffset="75"></circle>
+
+          <g class="chart-text">
+    <text x="50%" y="50%" class="chart-number">
+      10
+    </text>
+    <text x="50%" y="50%" class="chart-label">
+      INTERVIEWS
+    </text>
+  </g>
+</svg>
+ </picture>
         
-        <figcaption class="top__left__figures__caption">TOTALS Out of 5231 Views</figcaption>
+        <picture class="top__left__applicant__chart">
+        <svg class="top__left__figures__circle__charts" width="100%" height="100%" viewBox="0 0 42 42" class="donut" alt="APPLICANTS">
+          <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="transparent">
+        
+          </circle>
+          <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#DBE4EA" stroke-width="3"></circle>
+
+          <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#DBE4EA" stroke-width="3"></circle>
+
+          <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#A36EAB" stroke-width="3" stroke-dasharray="20 80" stroke-dashoffset="75"></circle>
+
+          <g class="chart-text">
+    <text x="50%" y="50%" class="chart-number">
+      10
+    </text>
+    <text x="50%" y="50%" class="chart-label">
+      FORWARDS
+    </text>
+  </g>
+</svg>
+ </picture>
+        
+        <figcaption class="top__left__figures__caption">TOTALS • Out of 5231 Views</figcaption>
       </figure>
+
+
       <figure class="top__right__figure">
-        <img class="top__right__figure__bar__chart" src=" " alt="APPLICANTS/DAY">
-        <figcaption class="top__right__figure__caption">CAPTION APPLICANTS/DAY</figcaption>
+        <source srcset="images/bar-chart.jpg" media="(max-width: 768px )">
+      <!-- <source srcset="default.jpg" media="( )"> -->
+      <img class="top__right__figure__bar__chart" srcset="images/bar-chart.jpg" class="side__picture__image" alt="Default User Photo ">
+        <figcaption class="top__right__figure__caption">APPLICANTS/DAY</figcaption>
       </figure>
+    </picture>
+
+
     </section>
   </section>
 
   <section class="bottom" id="blue">
-    <table id="dodgerblue"></table>
+
+
+    <table class="job__table" id="dodgerblue">
+      <tr>
+        <td class="td-header padding">JOB DESCRIPTION</td>
+        <td class="td-header edit"><i class="fas fa-pencil-alt"></i>  EDIT</td>
+      </tr>
+      <tr>
+        <td class="padding">POSITION TITLE</td>
+        <td>Customer Service Rep</td>
+      </tr>
+      <tr>
+        <td class="padding">LOCATION</td>
+        <td>San Francisco, CA</td>
+      </tr>
+      <tr>
+        <td class="padding">EMPLOYMENT TYPE</td>
+        <td>Full-time</td>
+      </tr>
+      <tr>
+        <td class="padding">EXPERIENCE</td>
+        <td>Mid-level</td>
+      </tr>
+      <tr>
+        <td class="padding">STATUS</td>
+        <td>Open</td>
+      </tr>
+      <tr>
+        <td class="padding">DESCRIPTION</td>
+        <td>I'm your second cell.I'm your second cell.I'm your second cell.I'm your second cell.I'm your second cell.I'm your second cell.I'm your second cell.I'm your second cell.I'm your second cell.I'm your second cell.I'm your second cell.I'm your second cell.I'm your second cell.I'm your second cell.I'm your second cell.I'm your second cell.I'm your second cell.I'm your second cell.I'm your second cell.I'm your second cell.I'm your second cell.I'm your second cell.I'm your second cell.I'm your second cell.I'm your second cell.I'm your second cell.I'm your second cell.I'm your second cell.</td>
+      </tr>
+      <tr>
+        <td class="padding">HIRING LEAD</td>
+        <td class="hiring__lead"><picture class="picture table__picture" >
+      <source srcset="images/yvette.jpg" media="(max-width: 768px )">
+      <!-- <source srcset="default.jpg" media="( )"> -->
+      <img srcset="images/yvette.jpg" class="table__picture__image" id="circle-picture__table" alt="Default User Photo ">
+    </picture><p class="hiring__lead__name">Yvette Marquis</p></td>
+      </tr>
+      <tr>
+        <td class="padding">APPROVED SALARY</td>
+        <td>$58,000</td>
+      </tr>
+    </table>
+
+
+
     
     <aside class="social" id="forestgreen" >
       
-      <button class="social__button social__button-facebook">Post to Facebook</button>
-      <button class="social__button social__button-twitter">Tweet this Job</button>
-      <button class="social__button social__button-linkedin">Post to LinkedIn</button>
+      <button class="social__button social__button-facebook"><i class="fab fa-facebook-f"></i>Post to Facebook</button>
+      <button class="social__button social__button-twitter"><i class="fab fa-twitter"></i>Tweet this Job</button>
+      <button class="social__button social__button-linkedin"><i class="fab fa-linkedin-in"></i>Post to LinkedIn</button>
       
-      <h3 class="social__h3">Link to this Job
-      <p>Lorem ipsum dolor sit amet, consecturive, adipsi, ting else. Integr molies neque eget vestidpend.</p>
+      <h3 class="social__h3 h3-bottom-line"><i class="fas fa-globe h3__icon"></i>Link to this Job
+      <p class="inside-h3">Lorem ipsum dolor sit amet, consecturive, adipsi, ting else. Integr molies neque eget vestidpend.</p>
       <input class="social__input"http://loremipsum....><button class="input__button">Copy</button></input>
       </h3>
 
-      <h3 class="social__h3">Use the Button Wedgit
-      <p>Lorem ipsum dolor sit amet, consecturive, adipsi, ting else. Integr molies neque eget vestidpend.</p>
+      <h3 class="social__h3 h3-bottom-line"><i class="fas fa-puzzle-piece h3__icon"></i>Use the Button Widgit
+      <p class="inside-h3">Lorem ipsum dolor sit amet, consecturive, adipsi, ting else. Integr molies neque eget vestidpend.</p>
       <input class="social__input"http://loremipsum....><button class="input__button">Copy</button></input>
       </h3>
 
-      <h3 class="social__h3">Upload Resumes by Email
-      <p>Lorem ipsum dolor sit amet, consecturive, adipsi, ting else. Integr molies neque eget vestidpend.</p>
+      <h3 class="social__h3"><i class="fab fa-telegram-plane h3__icon"></i>Upload Resumes by Email
+      <p class="inside-h3">Lorem ipsum dolor sit amet, consecturive, adipsi, ting else. Integr molies neque eget vestidpend.</p>
       <input class="social__input"http://loremipsum....></input>
       </h3>
 
